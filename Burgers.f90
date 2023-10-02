@@ -2,7 +2,7 @@ module mod_file
     !implicit none
     use, intrinsic :: iso_c_binding 
     include 'fftw3.f03'
-    integer*8,parameter::N=10**3, Nh = N/2+1  
+    integer*8,parameter::N=2**9, Nh = N/2+1  
     real(kind=8),parameter::pi=4.0*atan(1.0)  , dt = 10**(-4.0)
     real(kind=8),parameter::l=2.0*pi , dx = l/N , nu =10.0**(-2.0)
     complex(kind=8),parameter:: zi = (0.0,1.0) 
